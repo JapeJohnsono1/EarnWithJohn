@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn With John | Transform Your Business With One Simple Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            background: white;
+            padding: 50px 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 50px 0;
+            border-radius: 8px;
+        }
+        .intro h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 15px;
+        }
+        .highlight {
+            color: #6e8efb;
+            font-weight: 700;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 18px 32px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        .cta-button:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(33, 136, 56, 0.5);
+        }
+        .features {
+            background: white;
+            padding: 50px 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 50px 0;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+        .features ul {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+        .features li {
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #6e8efb;
+            background: #f9f9ff;
+            font-size: 1.1rem;
+        }
+        .testimonials {
+            background: white;
+            padding: 50px 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 50px 0;
+        }
+        .testimonials h2 {
+            text-align: center; 
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+        .testimonial-card {
+            background: #f9f9ff;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .testimonial-header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .testimonial-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .testimonial-author {
+            font-weight: 600;
+            font-style: italic;
+            text-align: right;
+            margin-top: 15px;
+        }
+        .faq {
+            background: white;
+            padding: 50px 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 50px 0;
+        }
+        .faq h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .faq-answer {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .bonus {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 50px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .bonus h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        .bonus p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .benefit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #6e8efb;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Transform Your Business With <span class="highlight">One Platform</span></h1>
+        <p>The all-in-one marketing and sales system that's helping entrepreneurs earn $1,000+ monthly with less effort</p>
+    </section>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Stop Paying For <span class="highlight">Multiple Tools</span></h2>
+            <p>Hi, I'm John! I've spent years juggling dozens of marketing tools and wasting thousands of dollars on software that didn't work together.</p>
+            <p>Then I discovered the <strong>all-in-one platform</strong> that changed everything. Now I use one system instead of 10+ separate tools, saving both money and time.</p>
+            <p>This revolutionary platform offers everything you need to grow your business:</p>
+            <p>✅ <strong>Replace 10+ tools with one</strong> — save up to $500/month on software</p>
+            <p>✅ <strong>Automate your entire business</strong> — work less while earning more</p>
+            <p>✅ <strong>No technical skills needed</strong> — intuitive interface anyone can use</p>
+            <p>I'm so confident this will transform your business that I'm offering a free bonus strategy call when you sign up through my link!</p>
+            <a href="https://www.gohighlevel.com/970?fp_ref=john-ekow26" class="cta-button">DISCOVER THE PLATFORM →</a>
+        </section>
+        
+        <section class="benefits">
+            <div class="benefit-card">
+                <div class="icon">⏱️</div>
+                <h3>Save 15+ Hours Weekly</h3>
+                <p>Automate repetitive tasks and manage everything from one dashboard instead of jumping between tools</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">💰</div>
+                <h3>Cut Costs By 70%</h3>
+                <p>Replace your expensive stack of marketing tools with one affordable solution that does it all</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">📈</div>
+                <h3>Double Your Results</h3>
+                <p>Users report 2-3x more leads and sales after implementing this integrated marketing approach</p>
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>Everything You Need In <span class="highlight">One Place</span></h2>
+            <ul>
+                <li><strong>Complete CRM & Lead Management</strong> — Track and nurture your prospects through every stage of your sales process automatically.</li>
+                <li><strong>Drag-and-Drop Website & Funnel Builder</strong> — Create high-converting landing pages and sales funnels without coding or design skills.</li>
+                <li><strong>Email & SMS Marketing Automation</strong> — Send personalized messages that convert prospects into customers on autopilot.</li>
+                <li><strong>Smart AI Chatbots & Assistants</strong> — Let AI handle customer inquiries, bookings, and sales so you don't have to be available 24/7.</li>
+                <li><strong>Professional Branding Options</strong> — Make everything look like your own custom-built system to impress clients and customers.</li>
+                <li><strong>Integrated Calendar & Booking System</strong> — End the scheduling nightmare with an automated appointment system that syncs with your calendar.</li>
+                <li><strong>Digital Product & Course Delivery</strong> — Sell memberships, courses, or digital products with built-in payment processing.</li>
+                <li><strong>Review Management System</strong> — Get more positive reviews and manage your online reputation automatically.</li>
+                <li><strong>Advanced Workflow Automation</strong> — Build custom processes that run your business even when you're not working.</li>
+                <li><strong>Mobile App & Dashboard</strong> — Manage everything from anywhere, even from your phone.</li>
+            </ul>
+        </section>
+        
+        <section class="testimonials">
+            <h2>Real Business <span class="highlight">Results</span></h2>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="/api/placeholder/60/60" alt="Mark D." />
+                    <div>
+                        <h3>Mark D.</h3>
+                        <p>Marketing Agency Owner</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    "This platform has completely transformed my agency. We replaced 8 different software subscriptions with just one system, saving over $500 monthly while delivering better results for our clients. The automation features alone gave me back 20 hours every week."
+                </div>
+                <div class="testimonial-author">— Mark D., Marketing Agency Owner</div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="/api/placeholder/60/60" alt="Sarah L." />
+                    <div>
+                        <h3>Sarah L.</h3>
+                        <p>E-commerce Store Owner</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    "I'm not technical at all, but I was able to build my entire sales funnel and email automation sequence in a single afternoon. My conversion rate doubled within the first month! The best part is having everything in one place instead of the mess of tools I was using before."
+                </div>
+                <div class="testimonial-author">— Sarah L., E-commerce Store Owner</div>
+            </div>
+        </section>
+        
+        <section class="bonus">
+            <h2>🎁 Limited-Time Bonus Offer 🎁</h2>
+            <p>Sign up through my link today and receive:</p>
+            <p><strong>FREE 30-Minute Strategy Call ($197 Value)</strong></p>
+            <p>I'll personally help you get set up and share my best tips for maximizing this platform for your specific business needs.</p>
+            <p><em>This bonus is exclusively available when you sign up using my affiliate link below!</em></p>
+            <a href="https://www.gohighlevel.com/970?fp_ref=john-ekow26" class="cta-button">CLAIM YOUR BONUS NOW →</a>
+        </section>
+        
+        <section class="faq">
+            <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is this platform good for beginners?</div>
+                <div class="faq-answer">Absolutely! While the platform is powerful, it's designed with an intuitive interface that makes it accessible even if you're not tech-savvy. There are excellent onboarding tutorials, and with my bonus strategy call, you'll be up and running quickly.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does this compare to other marketing platforms?</div>
+                <div class="faq-answer">This platform stands out because it combines features that would normally require 5-10 different software subscriptions. Instead of paying separately for a CRM, email marketing, website builder, booking system, etc., you get everything in one integrated platform for one price.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I try before I commit?</div>
+                <div class="faq-answer">Yes! There's a 14-day free trial so you can test everything risk-free. After that, you can cancel anytime — there are no long-term contracts required.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What types of businesses benefit most?</div>
+                <div class="faq-answer">This all-in-one system works for virtually any business, but it's especially valuable for service-based businesses, coaches
